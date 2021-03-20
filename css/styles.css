@@ -24,6 +24,14 @@ main .header {
     background-color: #264653;
 }
 
+main .jumbo {
+    background: url('../img/noodles.jpg');
+    grid-column: 1/4;
+    height: 500px;
+    background-size: cover;
+    color: linen;
+}
+
 main .left {
     grid-column: 1/2;
     /* in this layout, .left is taking up space from 1 --> 2, .main is occupying 2--> 3 and right is occupying 3 --> 4 */
