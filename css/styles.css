@@ -24,12 +24,15 @@ main .header {
     background-color: #264653;
 }
 
-main .jumbo {
-    background: url('../img/noodles.jpg');
+main .jumbo { 
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url('../img/noodles.jpg');
+    /* creates a transparent linear gradient over the background image to make text more legible */
     grid-column: 1/4;
     height: 500px;
     background-size: cover;
     color: linen;
+    max-width: 100%;
+    /* makes sure this will fit on smaller screens */
 }
 
 main .left {
@@ -37,8 +40,6 @@ main .left {
     /* in this layout, .left is taking up space from 1 --> 2, .main is occupying 2--> 3 and right is occupying 3 --> 4 */
     background-color: #2A9D8F;
     justify-items: left;
-
-
 }
 
 main .mainbody {
