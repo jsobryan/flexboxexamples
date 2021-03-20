@@ -29,6 +29,9 @@ main .mainbody {
 
 }
 
+.container {
+    display: flex;
+}
 
 main .right {
     grid-column: 3/4;
