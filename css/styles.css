@@ -10,8 +10,9 @@
 main {
     /* anything within the 'main' div will follow the grid rules outlined below */
     display: grid;
-    /* auto 1fr auto / auto 1fr auto; = rows / columns */
+
     grid-template: auto 1fr auto / auto 1fr auto;
+    /* auto 1fr auto / auto 1fr auto; = rows / columns.  'fr' = fractional unit of space determined by the minimum size of content within the element*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -27,6 +28,8 @@ main .left {
     grid-column: 1/2;
     /* in this layout, .left is taking up space from 1 --> 2, .main is occupying 2--> 3 and right is occupying 3 --> 4 */
     background-color: #2A9D8F;
+    justify-items: left;
+
 
 }
 
