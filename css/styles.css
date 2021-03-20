@@ -1,24 +1,31 @@
+/* resets all web settings to 'nothing' */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+/*  */
 
 main {
+    /* anything within the 'main' div will follow the grid rules outlined below */
     display: grid;
     /* auto 1fr auto / auto 1fr auto; = rows / columns */
-    /* grid-template: auto 1fr auto / auto 1fr auto; */
+    grid-template: auto 1fr auto / auto 1fr auto;
     font-family: 'Poppins', sans-serif;
 }
 
 main .header {
     padding: 2rem;
+    /* "rem" is font size relative to the root font size. '2rem' would be twice the default*/
     grid-column: 1/4;
+    /* size of the column.  In this case, taking the entire width */
     background-color: #264653;
 }
 
 main .left {
     grid-column: 1/2;
+    /* in this layout, .left is taking up space from 1 --> 2, .main is occupying 2--> 3 and right is occupying 3 --> 4 */
     background-color: #2A9D8F;
 
 }
@@ -31,12 +38,16 @@ main .mainbody {
 
 .container {
     display: flex;
+    /* this will align any item within the container side by side */
 }
 
 .container2 {
     align-items: center;
     justify-content: space-around;
+    /* items in the container will have space before, between, and after */
+
     flex-wrap: wrap;
+    /* any items within this container will stack on top of each other as the browser width narrows */
 }
 
 .container2 img {
